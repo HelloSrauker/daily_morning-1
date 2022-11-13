@@ -11,6 +11,7 @@ nowtime = datetime.utcnow() + timedelta(hours=8)  # 东八区时间
 today = datetime.strptime(str(nowtime.date()), "%Y-%m-%d") #今天的日期
 
 start_date = os.getenv('START_DATE')
+love_date = os.getenv('LOVE_DATE')
 city = os.getenv('CITY')
 birthday = os.getenv('BIRTHDAY')
 
@@ -59,6 +60,14 @@ def get_memorial_days_count():
     print('没有设置 START_DATE')
     return 0
   delta = today - datetime.strptime(start_date, "%Y-%m-%d")
+  return delta.days
+
+# 纪念日正数
+def get_memorial_love_days_count():
+  if love_date is None:
+    print('没有设置 LOVE_DATE')
+    return 0
+  delta = today - datetime.strptime(love_date, "%Y-%m-%d")
   return delta.days
 
 # 各种倒计时
@@ -150,7 +159,7 @@ data = {
     "color": get_random_color()
   },
   "love_days": {
-    "value": get_memorial_days_count(),
+    "value": get_memorial_love_days_count(),
     "color": get_random_color()
   },
   "meet_days": {
