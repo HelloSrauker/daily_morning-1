@@ -153,6 +153,10 @@ data = {
     "value": get_memorial_days_count(),
     "color": get_random_color()
   },
+  "meet_days": {
+    "value": get_memorial_days_count(),
+    "color": get_random_color()
+  },
   "words": {
     "value": get_words(),
     "color": get_random_color()
