@@ -126,38 +126,38 @@ data = {
     "value": get_week_day(),
     "color": get_random_color()
   },
-  "weather": {
-    "value": city,
-    "color": get_random_color()
-  },
-  "humidity": {
-    "value": weather['humidity'],
-    "color": get_random_color()
-  },
-  "wind": {
-    "value": weather['wind'],
-    "color": get_random_color()
-  },
-  "air_data": {
-    "value": weather['airData'],
-    "color": get_random_color()
-  },
-  "air_quality": {
-    "value": weather['airQuality'],
-    "color": get_random_color()
-  },
-  "temperature": {
-    "value": math.floor(weather['temp']),
-    "color": get_random_color()
-  },
-  "highest": {
-    "value": math.floor(weather['high']),
-    "color": get_random_color()
-  },
-  "lowest": {
-    "value": math.floor(weather['low']),
-    "color": get_random_color()
-  },
+#   "weather": {
+#     "value": city,
+#     "color": get_random_color()
+#   },
+#   "humidity": {
+#     "value": weather['humidity'],
+#     "color": get_random_color()
+#   },
+#   "wind": {
+#     "value": weather['wind'],
+#     "color": get_random_color()
+#   },
+#   "air_data": {
+#     "value": weather['airData'],
+#     "color": get_random_color()
+#   },
+#   "air_quality": {
+#     "value": weather['airQuality'],
+#     "color": get_random_color()
+#   },
+#   "temperature": {
+#     "value": math.floor(weather['temp']),
+#     "color": get_random_color()
+#   },
+#   "highest": {
+#     "value": math.floor(weather['high']),
+#     "color": get_random_color()
+#   },
+#   "lowest": {
+#     "value": math.floor(weather['low']),
+#     "color": get_random_color()
+#   },
   "love_days": {
     "value": get_memorial_love_days_count(),
     "color": get_random_color()
