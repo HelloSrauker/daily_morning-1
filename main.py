@@ -109,10 +109,10 @@ def split_birthday():
     return None
   return birthday.split('\n')
 
-weather = get_weather()
-if weather is None:
-  print('获取天气失败')
-  exit(422)
+#weather = get_weather()
+#if weather is None:
+#  print('获取天气失败')
+#  exit(422)
 data = {
   "city": {
     "value": city,
@@ -127,7 +127,7 @@ data = {
     "color": get_random_color()
   },
   "weather": {
-    "value": weather['weather'],
+    "value": city,
     "color": get_random_color()
   },
   "humidity": {
